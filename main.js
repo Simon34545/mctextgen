@@ -35,10 +35,3 @@ $('input').each(function() {
 });
 
 $(document).click(update);
-
-setInterval(function() {
-	html2canvas(document.getElementById('text')).then(function(canvas){
-		var img = canvas.toDataURL("image/png"); 
-		document.getElementById('imgout').src = img;
-    });
-}, 500);
