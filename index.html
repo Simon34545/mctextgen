@@ -16,7 +16,7 @@
 	<body style="font-family: Arial; background-image: url('dirt.png'); color: white;">
 		<h1 style="color: black;"><span style="font-family: minecraft;">MINECRAFT</span> Text Generator</h1>
 		<div id="text" style="display: inline-block; font-size: 12px; padding: 8px; background-color: #000000; color: #cccccc; font-family: minecraft!important; word-wrap: break-word;">Hello, world!</div>
-		<p>Image version: </p>
+		<a href="javascript: html2canvas(document.getElementById('text')).then(function(canvas){var img = canvas.toDataURL("image/png"); document.getElementById('imgout').src = img;});">Image version: </a>
 		<image id="imgout"></image>
 		<br>
 		<br>
@@ -71,6 +71,8 @@
 			<option value="#DDD605">§g (minecoin_gold)</option>
 		</select>
 		<input type="color" name="bgcolor" value="#000000" id="input">
+		<br>
+		<p>Want the font? Get the <a href="minecraftfont.woff" download>woff</a> file or <a href="minecraftfont.ttf" download>ttf</a> file here.<</p>
 		<script src="main.js"></script>
 	</body>
 </html>
